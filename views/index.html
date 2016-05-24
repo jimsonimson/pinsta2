@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <title>Pinsta</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="/css/site.css" charset="utf-8" />
+</head>
+
+<body>
+  <div>
+    <a href="/">Home</a>
+  </div>
+
+  <ng-view></ng-view>
+
+  <footer>
+    <!-- Bootstrap/Jquery -->
+    <script src = 'https://code.jquery.com/jquery-2.1.4.min.js' charset = 'utf-8'></script>
+    <script src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity = 'sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin = 'anonymous'></script>
+
+    <!-- Angular  -->
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js'></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js'></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.min.js'></script>
+
+    <!-- App -->
+    <script src="/javascript/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="/javascript/controllers/HomeController.js"></script>
+    <script src="/javascript/controllers/InstagramController.js"></script>
+
+    <!-- Services -->
+    <script src="/javascript/services/HomeService.js"></script>
+    <script src="/javascript/services/InstagramService.js"></script>
+
+    <!-- HTTPFactory -->
+    <script src="/javascript/services/HTTPFactory.js"></script>
+
+  </footer>
+
+</body>
+
+</html>
