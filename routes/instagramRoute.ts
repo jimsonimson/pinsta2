@@ -1,8 +1,8 @@
 "use strict"
 
 import express = require('express');
-let request = require('request');
-import jwt = require('express-jwt');
+// let request = require('request');
+// import jwt = require('express-jwt');
 let mongoose = require('mongoose');
 let InstagramAPI = require('instagram-api');
 
