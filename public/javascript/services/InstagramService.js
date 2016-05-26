@@ -4,8 +4,11 @@ var app;
     var Services;
     (function (Services) {
         var InstagramService = (function () {
-            function InstagramService() {
+            function InstagramService($resource) {
+                this.$resource = $resource;
             }
+            InstagramService.prototype.getIg = function () { };
+            ;
             ;
             return InstagramService;
         }());

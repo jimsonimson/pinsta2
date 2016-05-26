@@ -2,8 +2,11 @@
 
 namespace app.Services{
   export class InstagramService{
+    public getIg(){};
 
-    constructor(){
+    constructor(
+      private $resource: ng.resource.IResourceService
+    ){
 
     };
   }

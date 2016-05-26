@@ -4,10 +4,19 @@ var app;
     var Controllers;
     (function (Controllers) {
         var InstagramController = (function () {
-            function InstagramController(InstagramService) {
+            function InstagramController(InstagramService, $location, $routeParams) {
                 this.InstagramService = InstagramService;
+                this.$location = $location;
+                this.$routeParams = $routeParams;
                 this.igFeed = {};
             }
+            InstagramController.prototype.getIgUser = function () {
+                var _this = this;
+                this.InstagramService.getIg().then(function (res) {
+                    _this.igResult = res;
+                });
+            };
+            ;
             return InstagramController;
         }());
         Controllers.InstagramController = InstagramController;
